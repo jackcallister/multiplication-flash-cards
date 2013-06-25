@@ -10,4 +10,20 @@
 
 @interface MFCViewController : UIViewController
 
+{
+    NSMutableArray *numbers;
+    NSMutableArray *multipliers;
+    
+    NSNumber *number;
+    NSNumber *multiplier;
+    
+    // view objects
+    
+    IBOutlet UILabel *equationMultiplicationField;
+}
+
+// methods
+
+- (IBAction)showMultiplicationEquation: (id)sender;
+
 @end
