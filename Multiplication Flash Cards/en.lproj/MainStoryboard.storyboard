@@ -12,17 +12,18 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxH-Oh-rbg">
+                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxH-Oh-rbg">
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="7MO-Hv-xoD"/>
                                     <constraint firstAttribute="width" constant="127" id="N9C-2C-2Jv"/>
-                                    <constraint firstAttribute="height" constant="51" id="T27-8s-fHI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="-8" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Next" backgroundImage="button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
+                                <state key="highlighted" backgroundImage="button-down.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -42,6 +43,7 @@
                                 <items>
                                     <navigationItem title="Multiplication" id="chr-uK-rdm">
                                         <barButtonItem key="rightBarButtonItem" title="Settings" id="Rfo-2u-dBM">
+                                            <color key="tintColor" red="0.48627450979999998" green="0.81960784310000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <segue destination="YVk-m3-8dO" kind="modal" modalTransitionStyle="flipHorizontal" id="PF9-Rj-hcf"/>
                                             </connections>
@@ -55,8 +57,8 @@
                             <constraint firstItem="zNZ-uW-clu" firstAttribute="centerX" secondItem="cZX-d7-X9R" secondAttribute="centerX" type="default" id="FVE-07-tPi"/>
                             <constraint firstItem="cZX-d7-X9R" firstAttribute="top" secondItem="3" secondAttribute="top" constant="134" id="Gt5-9Y-q9d"/>
                             <constraint firstItem="uxH-Oh-rbg" firstAttribute="centerX" secondItem="cZX-d7-X9R" secondAttribute="centerX" type="default" id="Pov-lT-gUT"/>
+                            <constraint firstAttribute="bottom" secondItem="uxH-Oh-rbg" secondAttribute="bottom" constant="112" id="RGm-xZ-IGO"/>
                             <constraint firstItem="zNZ-uW-clu" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="YfN-fd-3va"/>
-                            <constraint firstAttribute="bottom" secondItem="uxH-Oh-rbg" secondAttribute="bottom" constant="113" id="ZYP-gs-PyB"/>
                             <constraint firstItem="zNZ-uW-clu" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="boi-nN-YWA"/>
                             <constraint firstItem="zNZ-uW-clu" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="kDW-53-CEI"/>
                         </constraints>
@@ -87,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="643" y="602"/>
         </scene>
-        <!--Table View Controller - Settings-->
+        <!--Settings View Controller - Settings-->
         <scene sceneID="qZy-Bj-vCf">
             <objects>
-                <tableViewController id="CqE-Ne-MY6" sceneMemberID="viewController">
+                <tableViewController id="CqE-Ne-MY6" customClass="MFCSettingsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="FTT-ef-Od5">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,26 +106,375 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjk-NI-vRC">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="HAH-H7-2qU"/>
+                                                        <constraint firstAttribute="height" constant="21" id="iHv-JE-Npl"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Rn-gE-w6o">
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.81960784310000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switch1Changed:" destination="CqE-Ne-MY6" eventType="valueChanged" id="oFz-Q2-RqX"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="3Rn-gE-w6o" firstAttribute="centerY" secondItem="LfT-e9-X99" secondAttribute="centerY" type="default" id="1ap-Fl-n2v"/>
+                                            <constraint firstItem="rjk-NI-vRC" firstAttribute="leading" secondItem="LfT-e9-X99" secondAttribute="leading" constant="30" id="UnR-ge-bkg"/>
+                                            <constraint firstAttribute="trailing" secondItem="3Rn-gE-w6o" secondAttribute="trailing" constant="18" id="mlx-8N-0N0"/>
+                                            <constraint firstItem="3Rn-gE-w6o" firstAttribute="centerY" secondItem="rjk-NI-vRC" secondAttribute="centerY" type="default" id="pYz-B7-0S5"/>
+                                        </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="YPJ-yC-S1I">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="92B-1t-ktn">
                                         <rect key="frame" x="0.0" y="55" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPR-kR-m4r">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="9uE-wW-vaf"/>
+                                                        <constraint firstAttribute="height" constant="21" id="Fgp-cK-gHR"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w04-wW-jto">
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.81960784310000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switch2Changed:" destination="CqE-Ne-MY6" eventType="valueChanged" id="9l3-al-UJp"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="w04-wW-jto" firstAttribute="centerY" secondItem="TPR-kR-m4r" secondAttribute="centerY" type="default" id="FRR-xa-KYO"/>
+                                            <constraint firstItem="TPR-kR-m4r" firstAttribute="leading" secondItem="92B-1t-ktn" secondAttribute="leading" constant="30" id="IhW-1j-jfv"/>
+                                            <constraint firstItem="w04-wW-jto" firstAttribute="top" secondItem="92B-1t-ktn" secondAttribute="top" constant="8" id="IsQ-mQ-tbD"/>
+                                            <constraint firstAttribute="trailing" secondItem="w04-wW-jto" secondAttribute="trailing" constant="18" id="LkL-9M-1wr"/>
+                                        </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="2xD-hA-ukc">
-                                        <rect key="frame" x="0.0" y="99" width="320" height="45"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="2Or-Lw-lia">
+                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYR-Cf-QK9">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="Ii2-MY-2qq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fTd-eS-AXd">
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.81960784310000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switch3Changed:" destination="CqE-Ne-MY6" eventType="valueChanged" id="hLV-1u-34p"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="fTd-eS-AXd" secondAttribute="trailing" constant="18" id="BBM-J4-e2Y"/>
+                                            <constraint firstItem="aYR-Cf-QK9" firstAttribute="leading" secondItem="2Or-Lw-lia" secondAttribute="leading" constant="30" id="QqL-Pm-QzG"/>
+                                            <constraint firstItem="aYR-Cf-QK9" firstAttribute="centerY" secondItem="2Or-Lw-lia" secondAttribute="centerY" type="default" id="asz-Pq-mVf"/>
+                                            <constraint firstItem="fTd-eS-AXd" firstAttribute="centerY" secondItem="aYR-Cf-QK9" secondAttribute="centerY" type="default" id="hZb-dM-yiS"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="uHX-k2-D7G">
+                                        <rect key="frame" x="0.0" y="143" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6p-ph-c7G">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="9JB-El-qE8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LpU-3s-fh7">
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.81960784310000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switch4Changed:" destination="CqE-Ne-MY6" eventType="valueChanged" id="CbB-Su-WhG"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="a6p-ph-c7G" firstAttribute="centerY" secondItem="uHX-k2-D7G" secondAttribute="centerY" type="default" id="0uN-Aq-fkc"/>
+                                            <constraint firstItem="a6p-ph-c7G" firstAttribute="leading" secondItem="uHX-k2-D7G" secondAttribute="leading" constant="30" id="IpW-G3-50Q"/>
+                                            <constraint firstItem="LpU-3s-fh7" firstAttribute="centerY" secondItem="a6p-ph-c7G" secondAttribute="centerY" type="default" id="mW0-UR-YIq"/>
+                                            <constraint firstAttribute="trailing" secondItem="LpU-3s-fh7" secondAttribute="trailing" constant="18" id="rrM-9h-zfW"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="7pP-41-k0b">
+                                        <rect key="frame" x="0.0" y="187" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMY-N7-TRw">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="EFw-Aa-tYo"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mPY-U3-tEw">
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.81960784310000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switch5Changed:" destination="CqE-Ne-MY6" eventType="valueChanged" id="bJf-Ff-M95"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="JMY-N7-TRw" firstAttribute="leading" secondItem="7pP-41-k0b" secondAttribute="leading" constant="30" id="E2Q-r5-XCe"/>
+                                            <constraint firstAttribute="trailing" secondItem="mPY-U3-tEw" secondAttribute="trailing" constant="18" id="JuT-zq-sOw"/>
+                                            <constraint firstItem="mPY-U3-tEw" firstAttribute="centerY" secondItem="JMY-N7-TRw" secondAttribute="centerY" type="default" id="x5p-wa-IbI"/>
+                                            <constraint firstItem="JMY-N7-TRw" firstAttribute="centerY" secondItem="7pP-41-k0b" secondAttribute="centerY" type="default" id="xuY-Kh-s8F"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="i7S-Kf-43X">
+                                        <rect key="frame" x="0.0" y="231" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="6" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="On3-gu-ApY">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="RkT-nM-uI8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="36z-do-OWf">
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.81960784310000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switch6Changed:" destination="CqE-Ne-MY6" eventType="valueChanged" id="Btw-zL-SbV"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="On3-gu-ApY" firstAttribute="leading" secondItem="i7S-Kf-43X" secondAttribute="leading" constant="30" id="67D-PV-eGG"/>
+                                            <constraint firstItem="On3-gu-ApY" firstAttribute="centerY" secondItem="i7S-Kf-43X" secondAttribute="centerY" type="default" id="9Ka-2Q-rAt"/>
+                                            <constraint firstItem="36z-do-OWf" firstAttribute="centerY" secondItem="On3-gu-ApY" secondAttribute="centerY" type="default" id="bke-2V-lBz"/>
+                                            <constraint firstAttribute="trailing" secondItem="36z-do-OWf" secondAttribute="trailing" constant="18" id="er1-gw-v65"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Fpd-wT-QrF">
+                                        <rect key="frame" x="0.0" y="275" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3x-hh-maP">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="7EB-te-DPc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1mk-kY-NSH">
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.81960784310000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switch7Changed:" destination="CqE-Ne-MY6" eventType="valueChanged" id="Rad-dB-vMz"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="q3x-hh-maP" firstAttribute="leading" secondItem="Fpd-wT-QrF" secondAttribute="leading" constant="30" id="IC2-zI-eOx"/>
+                                            <constraint firstAttribute="trailing" secondItem="1mk-kY-NSH" secondAttribute="trailing" constant="18" id="o3s-dJ-REv"/>
+                                            <constraint firstItem="q3x-hh-maP" firstAttribute="centerY" secondItem="Fpd-wT-QrF" secondAttribute="centerY" type="default" id="t8j-ge-huS"/>
+                                            <constraint firstItem="1mk-kY-NSH" firstAttribute="centerY" secondItem="q3x-hh-maP" secondAttribute="centerY" type="default" id="zEi-4Y-Wpi"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="iaw-Cd-pXJ">
+                                        <rect key="frame" x="0.0" y="319" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="8" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="een-yO-Cit">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="xqW-Rg-HSD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VES-ua-UIS">
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.81960784310000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switch8Changed:" destination="CqE-Ne-MY6" eventType="valueChanged" id="J5A-ae-aht"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="een-yO-Cit" firstAttribute="leading" secondItem="iaw-Cd-pXJ" secondAttribute="leading" constant="30" id="Dmt-IX-GHp"/>
+                                            <constraint firstAttribute="trailing" secondItem="VES-ua-UIS" secondAttribute="trailing" constant="18" id="TDy-iu-IbR"/>
+                                            <constraint firstItem="VES-ua-UIS" firstAttribute="centerY" secondItem="een-yO-Cit" secondAttribute="centerY" type="default" id="Uhg-nD-rAX"/>
+                                            <constraint firstItem="een-yO-Cit" firstAttribute="centerY" secondItem="iaw-Cd-pXJ" secondAttribute="centerY" type="default" id="czG-Q5-olj"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="EkS-e0-mTa">
+                                        <rect key="frame" x="0.0" y="363" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="9" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGU-tS-y88">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="jOV-Jh-wWy"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WF6-hU-XjB">
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.81960784310000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switch9Changed:" destination="CqE-Ne-MY6" eventType="valueChanged" id="gER-qa-XIO"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="BGU-tS-y88" firstAttribute="centerY" secondItem="EkS-e0-mTa" secondAttribute="centerY" type="default" id="2XK-j7-6vW"/>
+                                            <constraint firstItem="WF6-hU-XjB" firstAttribute="centerY" secondItem="BGU-tS-y88" secondAttribute="centerY" type="default" id="Dlv-Q7-G5V"/>
+                                            <constraint firstItem="BGU-tS-y88" firstAttribute="leading" secondItem="EkS-e0-mTa" secondAttribute="leading" constant="30" id="RhI-5r-e5i"/>
+                                            <constraint firstAttribute="trailing" secondItem="WF6-hU-XjB" secondAttribute="trailing" constant="18" id="eoW-gb-PMO"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="WRg-sp-ei1">
+                                        <rect key="frame" x="0.0" y="407" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6v-Fe-L6L">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="Cv0-uA-afK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TAL-xC-1YR">
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.81960784310000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switch10Changed:" destination="CqE-Ne-MY6" eventType="valueChanged" id="BSk-Iu-0XX"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="S6v-Fe-L6L" firstAttribute="centerY" secondItem="WRg-sp-ei1" secondAttribute="centerY" type="default" id="IOX-gb-9io"/>
+                                            <constraint firstAttribute="trailing" secondItem="TAL-xC-1YR" secondAttribute="trailing" constant="18" id="KYw-uE-L9B"/>
+                                            <constraint firstItem="S6v-Fe-L6L" firstAttribute="leading" secondItem="WRg-sp-ei1" secondAttribute="leading" constant="30" id="WDf-wb-55r"/>
+                                            <constraint firstItem="TAL-xC-1YR" firstAttribute="centerY" secondItem="S6v-Fe-L6L" secondAttribute="centerY" type="default" id="fgY-5L-daJ"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="8Gf-zv-SxY">
+                                        <rect key="frame" x="0.0" y="451" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="11" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ya-lx-0bQ">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="CNL-Xr-bWr"/>
+                                                        <constraint firstAttribute="width" constant="42" id="rEK-SC-czi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FJj-s3-4v0">
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.81960784310000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switch11Changed:" destination="CqE-Ne-MY6" eventType="valueChanged" id="QKv-pv-P5W"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="FJj-s3-4v0" secondAttribute="trailing" constant="18" id="Isd-tW-beK"/>
+                                            <constraint firstItem="6Ya-lx-0bQ" firstAttribute="leading" secondItem="8Gf-zv-SxY" secondAttribute="leading" constant="30" id="LHA-E8-ksm"/>
+                                            <constraint firstItem="FJj-s3-4v0" firstAttribute="top" secondItem="8Gf-zv-SxY" secondAttribute="top" constant="8" id="WYN-yT-Kdm"/>
+                                            <constraint firstItem="FJj-s3-4v0" firstAttribute="centerY" secondItem="6Ya-lx-0bQ" secondAttribute="centerY" type="default" id="lP8-CX-Kjv"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="mFW-ZM-fd3">
+                                        <rect key="frame" x="0.0" y="495" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4f-Q5-uM7">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="ZY2-B6-ZX9"/>
+                                                        <constraint firstAttribute="width" constant="42" id="mMH-OT-bdS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBN-6X-ogG">
+                                                    <color key="onTintColor" red="0.48627450979999998" green="0.81960784310000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="switch12Changed:" destination="CqE-Ne-MY6" eventType="valueChanged" id="xxM-bE-XNL"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="DBN-6X-ogG" secondAttribute="trailing" constant="18" id="BQF-as-lNs"/>
+                                            <constraint firstItem="b4f-Q5-uM7" firstAttribute="leading" secondItem="mFW-ZM-fd3" secondAttribute="leading" constant="30" id="Zqm-jd-kr4"/>
+                                            <constraint firstItem="DBN-6X-ogG" firstAttribute="top" secondItem="mFW-ZM-fd3" secondAttribute="top" constant="8" id="sJC-ne-6da"/>
+                                            <constraint firstItem="DBN-6X-ogG" firstAttribute="centerY" secondItem="b4f-Q5-uM7" secondAttribute="centerY" type="default" id="znF-4A-Txg"/>
+                                        </constraints>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -134,20 +485,68 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="i5w-Ib-nNP">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="aSS-hQ-oug">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="aSS-hQ-oug">
                             <inset key="imageInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
+                            <color key="tintColor" red="0.48627450979999998" green="0.81960784310000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="9xn-4N-CdP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="switch1" destination="3Rn-gE-w6o" id="Ss1-Da-Oko"/>
+                        <outlet property="switch10" destination="TAL-xC-1YR" id="Rpo-g4-FIR"/>
+                        <outlet property="switch11" destination="FJj-s3-4v0" id="NRQ-MB-hRb"/>
+                        <outlet property="switch12" destination="DBN-6X-ogG" id="WaO-Fr-Ity"/>
+                        <outlet property="switch2" destination="w04-wW-jto" id="ez9-mX-9LU"/>
+                        <outlet property="switch3" destination="fTd-eS-AXd" id="dod-Ua-me2"/>
+                        <outlet property="switch4" destination="LpU-3s-fh7" id="WXh-gw-ocV"/>
+                        <outlet property="switch5" destination="mPY-U3-tEw" id="Rex-g0-716"/>
+                        <outlet property="switch6" destination="36z-do-OWf" id="vST-k2-Msa"/>
+                        <outlet property="switch7" destination="1mk-kY-NSH" id="2Cv-bh-VIt"/>
+                        <outlet property="switch8" destination="VES-ua-UIS" id="WUK-CS-YEf"/>
+                        <outlet property="switch9" destination="WF6-hU-XjB" id="poD-R3-eAS"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lc1-5d-rgj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1018" y="602"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button-down.png" width="278" height="47"/>
+        <image name="button.png" width="278" height="47"/>
+    </resources>
     <classes>
+        <class className="MFCSettingsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MFCSettingsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="switch10Changed:"/>
+                <relationship kind="action" name="switch11Changed:"/>
+                <relationship kind="action" name="switch12Changed:"/>
+                <relationship kind="action" name="switch1Changed:"/>
+                <relationship kind="action" name="switch2Changed:"/>
+                <relationship kind="action" name="switch3Changed:"/>
+                <relationship kind="action" name="switch4Changed:"/>
+                <relationship kind="action" name="switch5Changed:"/>
+                <relationship kind="action" name="switch6Changed:"/>
+                <relationship kind="action" name="switch7Changed:"/>
+                <relationship kind="action" name="switch8Changed:"/>
+                <relationship kind="action" name="switch9Changed:"/>
+                <relationship kind="outlet" name="switch1" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switch10" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switch11" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switch12" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switch2" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switch3" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switch4" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switch5" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switch6" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switch7" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switch8" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switch9" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
         <class className="MFCViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MFCViewController.h"/>
             <relationships>

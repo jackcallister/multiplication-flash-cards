@@ -12,8 +12,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // adjust the colour of the back view for the grouped table view
+    UIView *backView = [[UIView alloc] init];
+    [backView setBackgroundColor:[UIColor colorWithRed:236.0/255.0 green:230.0/255.0 blue:216/255.0 alpha:1.0]];
+    [[UITableView appearance] setBackgroundView:backView];
+
+    // use an image for the navbar background
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbar-bg"] forBarMetrics:UIBarMetricsDefault];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent animated:NO];
+    
+    // set the font of the navbar
+    [[UINavigationBar appearance] setTitleTextAttributes:
+              [NSDictionary dictionaryWithObjectsAndKeys:
+                                    [UIColor clearColor],
+                                UITextAttributeTextColor,
+                                    [UIColor whiteColor],
+                          UITextAttributeTextShadowColor,
+         [NSValue valueWithUIOffset:UIOffsetMake(0, -1)],
+                         UITextAttributeTextShadowOffset,
+               [UIFont fontWithName:@"Cochin" size:24.0],
+                                     UITextAttributeFont, nil]];
     
     return YES;
 }

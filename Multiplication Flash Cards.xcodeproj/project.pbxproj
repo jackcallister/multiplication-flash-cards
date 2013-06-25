@@ -22,6 +22,9 @@
 		5C519C7B177962F200FF42AC /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C519C79177962F200FF42AC /* button@2x.png */; };
 		5C519C86177967B600FF42AC /* navbar-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C519C84177967B500FF42AC /* navbar-bg.png */; };
 		5C519C87177967B600FF42AC /* navbar-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C519C85177967B600FF42AC /* navbar-bg@2x.png */; };
+		5C519C8A17797C0400FF42AC /* MFCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C519C8917797C0400FF42AC /* MFCSettingsViewController.m */; };
+		5C519C8D17797EDD00FF42AC /* button-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C519C8B17797EDD00FF42AC /* button-down.png */; };
+		5C519C8E17797EDD00FF42AC /* button-down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C519C8C17797EDD00FF42AC /* button-down@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,10 @@
 		5C519C79177962F200FF42AC /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button@2x.png"; sourceTree = "<group>"; };
 		5C519C84177967B500FF42AC /* navbar-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar-bg.png"; sourceTree = "<group>"; };
 		5C519C85177967B600FF42AC /* navbar-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar-bg@2x.png"; sourceTree = "<group>"; };
+		5C519C8817797C0400FF42AC /* MFCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFCSettingsViewController.h; path = ../MFCSettingsViewController.h; sourceTree = "<group>"; };
+		5C519C8917797C0400FF42AC /* MFCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MFCSettingsViewController.m; path = ../MFCSettingsViewController.m; sourceTree = "<group>"; };
+		5C519C8B17797EDD00FF42AC /* button-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-down.png"; sourceTree = "<group>"; };
+		5C519C8C17797EDD00FF42AC /* button-down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-down@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +98,8 @@
 		5C519C2917795D1100FF42AC /* Multiplication Flash Cards */ = {
 			isa = PBXGroup;
 			children = (
+				5C519C8817797C0400FF42AC /* MFCSettingsViewController.h */,
+				5C519C8917797C0400FF42AC /* MFCSettingsViewController.m */,
 				5C519C3217795D1100FF42AC /* MFCAppDelegate.h */,
 				5C519C3317795D1100FF42AC /* MFCAppDelegate.m */,
 				5C519C3B17795D1100FF42AC /* MainStoryboard.storyboard */,
@@ -104,6 +113,8 @@
 		5C519C2A17795D1100FF42AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5C519C8B17797EDD00FF42AC /* button-down.png */,
+				5C519C8C17797EDD00FF42AC /* button-down@2x.png */,
 				5C519C84177967B500FF42AC /* navbar-bg.png */,
 				5C519C85177967B600FF42AC /* navbar-bg@2x.png */,
 				5C519C78177962F200FF42AC /* button.png */,
@@ -180,6 +191,8 @@
 				5C519C7B177962F200FF42AC /* button@2x.png in Resources */,
 				5C519C86177967B600FF42AC /* navbar-bg.png in Resources */,
 				5C519C87177967B600FF42AC /* navbar-bg@2x.png in Resources */,
+				5C519C8D17797EDD00FF42AC /* button-down.png in Resources */,
+				5C519C8E17797EDD00FF42AC /* button-down@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +206,7 @@
 				5C519C3017795D1100FF42AC /* main.m in Sources */,
 				5C519C3417795D1100FF42AC /* MFCAppDelegate.m in Sources */,
 				5C519C4017795D1100FF42AC /* MFCViewController.m in Sources */,
+				5C519C8A17797C0400FF42AC /* MFCSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
