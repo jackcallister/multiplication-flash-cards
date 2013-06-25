@@ -52,7 +52,8 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.94509803921568625" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="contentStretch" x="0.0" y="0.050000000000000003" width="1" height="1"/>
                         <constraints>
                             <constraint firstItem="zNZ-uW-clu" firstAttribute="centerX" secondItem="cZX-d7-X9R" secondAttribute="centerX" type="default" id="FVE-07-tPi"/>
                             <constraint firstItem="cZX-d7-X9R" firstAttribute="top" secondItem="3" secondAttribute="top" constant="134" id="Gt5-9Y-q9d"/>
@@ -96,7 +97,8 @@
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="FTT-ef-Od5">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.90196078430000004" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" white="1" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="AHU-3o-VBc">
                                 <cells>

@@ -25,6 +25,8 @@
 		5C519C8A17797C0400FF42AC /* MFCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C519C8917797C0400FF42AC /* MFCSettingsViewController.m */; };
 		5C519C8D17797EDD00FF42AC /* button-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C519C8B17797EDD00FF42AC /* button-down.png */; };
 		5C519C8E17797EDD00FF42AC /* button-down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C519C8C17797EDD00FF42AC /* button-down@2x.png */; };
+		5C519C901779834E00FF42AC /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C519C8F1779834E00FF42AC /* icon@2x.png */; };
+		5C519C921779835200FF42AC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C519C911779835200FF42AC /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		5C519C8917797C0400FF42AC /* MFCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MFCSettingsViewController.m; path = ../MFCSettingsViewController.m; sourceTree = "<group>"; };
 		5C519C8B17797EDD00FF42AC /* button-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-down.png"; sourceTree = "<group>"; };
 		5C519C8C17797EDD00FF42AC /* button-down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-down@2x.png"; sourceTree = "<group>"; };
+		5C519C8F1779834E00FF42AC /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		5C519C911779835200FF42AC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		5C519C1717795D1000FF42AC = {
 			isa = PBXGroup;
 			children = (
+				5C519C911779835200FF42AC /* icon.png */,
+				5C519C8F1779834E00FF42AC /* icon@2x.png */,
 				5C519C2917795D1100FF42AC /* Multiplication Flash Cards */,
 				5C519C2217795D1100FF42AC /* Frameworks */,
 				5C519C2117795D1100FF42AC /* Products */,
@@ -193,6 +199,8 @@
 				5C519C87177967B600FF42AC /* navbar-bg@2x.png in Resources */,
 				5C519C8D17797EDD00FF42AC /* button-down.png in Resources */,
 				5C519C8E17797EDD00FF42AC /* button-down@2x.png in Resources */,
+				5C519C901779834E00FF42AC /* icon@2x.png in Resources */,
+				5C519C921779835200FF42AC /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
