@@ -339,6 +339,7 @@
 				5C519C4517795D1100FF42AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
