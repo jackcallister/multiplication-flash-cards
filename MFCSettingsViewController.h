@@ -11,6 +11,7 @@
 @interface MFCSettingsViewController : UITableViewController
 
 {
+    IBOutlet UISwitch *switch0;
     IBOutlet UISwitch *switch1;
     IBOutlet UISwitch *switch2;
     IBOutlet UISwitch *switch3;
@@ -23,8 +24,10 @@
     IBOutlet UISwitch *switch10;
     IBOutlet UISwitch *switch11;
     IBOutlet UISwitch *switch12;
+    NSMutableArray *counters;
 }
 
+- (IBAction)switch0Changed:(id)sender;
 - (IBAction)switch1Changed:(id)sender;
 - (IBAction)switch2Changed:(id)sender;
 - (IBAction)switch3Changed:(id)sender;
@@ -37,5 +40,7 @@
 - (IBAction)switch10Changed:(id)sender;
 - (IBAction)switch11Changed:(id)sender;
 - (IBAction)switch12Changed:(id)sender;
+
+- (void)disableLastSwitch;
 
 @end

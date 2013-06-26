@@ -27,6 +27,27 @@
                          UITextAttributeTextShadowOffset,
                [UIFont fontWithName:@"Cochin" size:24.0],
                                      UITextAttributeFont, nil]];
+
+    // Register the preference defaults early.
+    NSMutableDictionary *appDefaults = [[NSMutableDictionary alloc] initWithCapacity:13];
+    
+    BOOL isTrue = YES;
+    
+    [appDefaults setObject:[NSNumber numberWithBool:isTrue] forKey:@"number0"];
+    [appDefaults setObject:[NSNumber numberWithBool:isTrue] forKey:@"number1"];
+    [appDefaults setObject:[NSNumber numberWithBool:isTrue] forKey:@"number2"];
+    [appDefaults setObject:[NSNumber numberWithBool:isTrue] forKey:@"number3"];
+    [appDefaults setObject:[NSNumber numberWithBool:isTrue] forKey:@"number4"];
+    [appDefaults setObject:[NSNumber numberWithBool:isTrue] forKey:@"number5"];
+    [appDefaults setObject:[NSNumber numberWithBool:isTrue] forKey:@"number6"];
+    [appDefaults setObject:[NSNumber numberWithBool:isTrue] forKey:@"number7"];
+    [appDefaults setObject:[NSNumber numberWithBool:isTrue] forKey:@"number8"];
+    [appDefaults setObject:[NSNumber numberWithBool:isTrue] forKey:@"number9"];
+    [appDefaults setObject:[NSNumber numberWithBool:isTrue] forKey:@"number10"];
+    [appDefaults setObject:[NSNumber numberWithBool:isTrue] forKey:@"number11"];
+    [appDefaults setObject:[NSNumber numberWithBool:isTrue] forKey:@"number12"];
+    
+    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
     
     return YES;
 }
@@ -56,6 +77,26 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)registerDefaults
+
+{
+//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+//    
+//    [userDefaults setBool:YES forKey:@"number1"];
+//    [userDefaults setBool:YES forKey:@"number2"];
+//    [userDefaults setBool:YES forKey:@"number3"];
+//    [userDefaults setBool:YES forKey:@"number4"];
+//    [userDefaults setBool:YES forKey:@"number5"];
+//    [userDefaults setBool:YES forKey:@"number6"];
+//    [userDefaults setBool:YES forKey:@"number7"];
+//    [userDefaults setBool:YES forKey:@"number8"];
+//    [userDefaults setBool:YES forKey:@"number9"];
+//    [userDefaults setBool:YES forKey:@"number10"];
+//    [userDefaults setBool:YES forKey:@"number11"];
+//    [userDefaults setBool:YES forKey:@"number12"];
+//    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end

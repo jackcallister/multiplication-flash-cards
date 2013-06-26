@@ -31,10 +31,11 @@
     multipliers = [[NSMutableArray alloc] init];
     numbers     = [[NSMutableArray alloc] init];
     
-    // always use zero
-    [multipliers addObject: [NSNumber numberWithInt: 0]];
-    
     // add the numbers to the array if they exsist in the user settings
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"number0"]) {
+        [multipliers addObject: [NSNumber numberWithInt: 0]];
+    }
+    
     if([[NSUserDefaults standardUserDefaults] boolForKey:@"number1"]) {
         [multipliers addObject: [NSNumber numberWithInt: 1]];
     }
