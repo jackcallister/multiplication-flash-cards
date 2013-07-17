@@ -108,20 +108,35 @@
     NSUInteger indexFromNumbers = arc4random() % [numbers count];
     number = [numbers objectAtIndex:indexFromNumbers];
     
-    NSNumber *answer = [NSNumber numberWithInt:([number integerValue] * [multiplier integerValue])];
+    answer = [NSNumber numberWithInt:([number integerValue] * [multiplier integerValue])];
     
     // random number to decide the side of multiplier
     int sideForMultiplier = arc4random() % 2;
     
     if(sideForMultiplier > 0){
-        NSString *equationAsString = [NSString stringWithFormat:@"%@ x %@ = %@", multiplier, number, answer];
+        NSString *equationAsString = [NSString stringWithFormat:@"%@ x %@", multiplier, number];
         // display the equation in the equation field
         [equationMultiplicationField setText:equationAsString];
     } else {
-        NSString *equationAsString = [NSString stringWithFormat:@"%@ x %@ = %@", number, multiplier, answer];
+        NSString *equationAsString = [NSString stringWithFormat:@"%@ x %@", number, multiplier];
         // display the equation in the equation field
         [equationMultiplicationField setText:equationAsString];
     }
+    
+    [self resetAnswerLabel];
+}
+
+- (IBAction)showMultiplicationAnswer:(id)sender
+{
+    if(answer) {
+        NSString *answerAsString = [NSString stringWithFormat:@"%@", answer];
+        [answerMultiplicationField setText:answerAsString];
+    }
+}
+
+- (void)resetAnswerLabel
+{
+    [answerMultiplicationField setText:@"?"];
 }
 
 @end

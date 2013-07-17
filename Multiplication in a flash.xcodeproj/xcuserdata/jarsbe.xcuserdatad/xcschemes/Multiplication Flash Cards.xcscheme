@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5C519C1F17795D1100FF42AC"
-               BuildableName = "Multiplication Flash Cards.app"
-               BlueprintName = "Multiplication Flash Cards"
-               ReferencedContainer = "container:Multiplication Flash Cards.xcodeproj">
+               BuildableName = "Flash Cards.app"
+               BlueprintName = "Multiplication in a flash"
+               ReferencedContainer = "container:Multiplication in a flash.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5C519C1F17795D1100FF42AC"
-            BuildableName = "Multiplication Flash Cards.app"
-            BlueprintName = "Multiplication Flash Cards"
-            ReferencedContainer = "container:Multiplication Flash Cards.xcodeproj">
+            BuildableName = "Flash Cards.app"
+            BlueprintName = "Multiplication in a flash"
+            ReferencedContainer = "container:Multiplication in a flash.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5C519C1F17795D1100FF42AC"
-            BuildableName = "Multiplication Flash Cards.app"
-            BlueprintName = "Multiplication Flash Cards"
-            ReferencedContainer = "container:Multiplication Flash Cards.xcodeproj">
+            BuildableName = "Flash Cards.app"
+            BlueprintName = "Multiplication in a flash"
+            ReferencedContainer = "container:Multiplication in a flash.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5C519C1F17795D1100FF42AC"
-            BuildableName = "Multiplication Flash Cards.app"
-            BlueprintName = "Multiplication Flash Cards"
-            ReferencedContainer = "container:Multiplication Flash Cards.xcodeproj">
+            BuildableName = "Flash Cards.app"
+            BlueprintName = "Multiplication in a flash"
+            ReferencedContainer = "container:Multiplication in a flash.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

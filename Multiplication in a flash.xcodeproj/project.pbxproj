@@ -13,7 +13,6 @@
 		5C519C2E17795D1100FF42AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C519C2C17795D1100FF42AC /* InfoPlist.strings */; };
 		5C519C3017795D1100FF42AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C519C2F17795D1100FF42AC /* main.m */; };
 		5C519C3417795D1100FF42AC /* MFCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C519C3317795D1100FF42AC /* MFCAppDelegate.m */; };
-		5C519C3617795D1100FF42AC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C519C3517795D1100FF42AC /* Default.png */; };
 		5C519C3D17795D1100FF42AC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C519C3B17795D1100FF42AC /* MainStoryboard.storyboard */; };
 		5C519C4017795D1100FF42AC /* MFCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C519C3F17795D1100FF42AC /* MFCViewController.m */; };
 		5C519C7A177962F200FF42AC /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C519C78177962F200FF42AC /* button.png */; };
@@ -27,20 +26,26 @@
 		5C519C921779835200FF42AC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C519C911779835200FF42AC /* icon.png */; };
 		5C737698177AB7E800FA1689 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C737697177AB7E800FA1689 /* Default@2x.png */; };
 		5C73769E177AB98700FA1689 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C73769D177AB98700FA1689 /* Default-568h@2x.png */; };
+		5C997248177D380000671798 /* button-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C997246177D380000671798 /* button-green.png */; };
+		5C997249177D380000671798 /* button-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C997247177D380000671798 /* button-green@2x.png */; };
+		5C99724C177D3EC700671798 /* button-green-down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C99724A177D3EC700671798 /* button-green-down@2x.png */; };
+		5C99724D177D3EC700671798 /* button-green-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C99724B177D3EC700671798 /* button-green-down.png */; };
+		5C997250177D42F500671798 /* bg-panel.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C99724E177D42F500671798 /* bg-panel.png */; };
+		5C997251177D42F500671798 /* bg-panel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C99724F177D42F500671798 /* bg-panel@2x.png */; };
+		5CEC5CAA177E513100A7B1F0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CEC5CA9177E513100A7B1F0 /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C519C2017795D1100FF42AC /* Multiplication Flash Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multiplication Flash Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C519C2017795D1100FF42AC /* Flash Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C519C2317795D1100FF42AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5C519C2517795D1100FF42AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5C519C2717795D1100FF42AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5C519C2B17795D1100FF42AC /* Multiplication Flash Cards-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Multiplication Flash Cards-Info.plist"; sourceTree = "<group>"; };
+		5C519C2B17795D1100FF42AC /* Multiplication in a flash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Multiplication in a flash-Info.plist"; sourceTree = "<group>"; };
 		5C519C2D17795D1100FF42AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C519C2F17795D1100FF42AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5C519C3117795D1100FF42AC /* Multiplication Flash Cards-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Multiplication Flash Cards-Prefix.pch"; sourceTree = "<group>"; };
+		5C519C3117795D1100FF42AC /* Multiplication in a flash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Multiplication in a flash-Prefix.pch"; sourceTree = "<group>"; };
 		5C519C3217795D1100FF42AC /* MFCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFCAppDelegate.h; sourceTree = "<group>"; };
 		5C519C3317795D1100FF42AC /* MFCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFCAppDelegate.m; sourceTree = "<group>"; };
-		5C519C3517795D1100FF42AC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5C519C3C17795D1100FF42AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5C519C3E17795D1100FF42AC /* MFCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFCViewController.h; sourceTree = "<group>"; };
 		5C519C3F17795D1100FF42AC /* MFCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFCViewController.m; sourceTree = "<group>"; };
@@ -56,6 +61,15 @@
 		5C519C911779835200FF42AC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		5C737697177AB7E800FA1689 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		5C73769D177AB98700FA1689 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		5C997246177D380000671798 /* button-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-green.png"; path = "../../../Desktop/button-green.png"; sourceTree = "<group>"; };
+		5C997247177D380000671798 /* button-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-green@2x.png"; path = "../../../Desktop/button-green@2x.png"; sourceTree = "<group>"; };
+		5C99724A177D3EC700671798 /* button-green-down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-green-down@2x.png"; path = "../../../Desktop/button-green-down@2x.png"; sourceTree = "<group>"; };
+		5C99724B177D3EC700671798 /* button-green-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-green-down.png"; path = "../../../Desktop/button-green-down.png"; sourceTree = "<group>"; };
+		5C99724E177D42F500671798 /* bg-panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-panel.png"; sourceTree = "<group>"; };
+		5C99724F177D42F500671798 /* bg-panel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-panel@2x.png"; sourceTree = "<group>"; };
+		5CEC5CA5177E511800A7B1F0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5CEC5CA7177E512800A7B1F0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5CEC5CA9177E513100A7B1F0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +89,9 @@
 		5C519C1717795D1000FF42AC = {
 			isa = PBXGroup;
 			children = (
+				5CEC5CA9177E513100A7B1F0 /* Default.png */,
+				5CEC5CA7177E512800A7B1F0 /* Default@2x.png */,
+				5CEC5CA5177E511800A7B1F0 /* Default-568h@2x.png */,
 				5C519C911779835200FF42AC /* icon.png */,
 				5C519C8F1779834E00FF42AC /* icon@2x.png */,
 				5C519C2917795D1100FF42AC /* Multiplication Flash Cards */,
@@ -86,7 +103,7 @@
 		5C519C2117795D1100FF42AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C519C2017795D1100FF42AC /* Multiplication Flash Cards.app */,
+				5C519C2017795D1100FF42AC /* Flash Cards.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,17 +136,22 @@
 		5C519C2A17795D1100FF42AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5C99724E177D42F500671798 /* bg-panel.png */,
+				5C99724F177D42F500671798 /* bg-panel@2x.png */,
+				5C99724A177D3EC700671798 /* button-green-down@2x.png */,
+				5C99724B177D3EC700671798 /* button-green-down.png */,
+				5C997246177D380000671798 /* button-green.png */,
+				5C997247177D380000671798 /* button-green@2x.png */,
 				5C519C8B17797EDD00FF42AC /* button-down.png */,
 				5C519C8C17797EDD00FF42AC /* button-down@2x.png */,
 				5C519C84177967B500FF42AC /* navbar-bg.png */,
 				5C519C85177967B600FF42AC /* navbar-bg@2x.png */,
 				5C519C78177962F200FF42AC /* button.png */,
 				5C519C79177962F200FF42AC /* button@2x.png */,
-				5C519C2B17795D1100FF42AC /* Multiplication Flash Cards-Info.plist */,
+				5C519C2B17795D1100FF42AC /* Multiplication in a flash-Info.plist */,
 				5C519C2C17795D1100FF42AC /* InfoPlist.strings */,
 				5C519C2F17795D1100FF42AC /* main.m */,
-				5C519C3117795D1100FF42AC /* Multiplication Flash Cards-Prefix.pch */,
-				5C519C3517795D1100FF42AC /* Default.png */,
+				5C519C3117795D1100FF42AC /* Multiplication in a flash-Prefix.pch */,
 				5C737697177AB7E800FA1689 /* Default@2x.png */,
 				5C73769D177AB98700FA1689 /* Default-568h@2x.png */,
 			);
@@ -139,9 +161,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5C519C1F17795D1100FF42AC /* Multiplication Flash Cards */ = {
+		5C519C1F17795D1100FF42AC /* Multiplication in a flash */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C519C4317795D1100FF42AC /* Build configuration list for PBXNativeTarget "Multiplication Flash Cards" */;
+			buildConfigurationList = 5C519C4317795D1100FF42AC /* Build configuration list for PBXNativeTarget "Multiplication in a flash" */;
 			buildPhases = (
 				5C519C1C17795D1100FF42AC /* Sources */,
 				5C519C1D17795D1100FF42AC /* Frameworks */,
@@ -151,9 +173,9 @@
 			);
 			dependencies = (
 			);
-			name = "Multiplication Flash Cards";
+			name = "Multiplication in a flash";
 			productName = "Multiplication Flash Cards";
-			productReference = 5C519C2017795D1100FF42AC /* Multiplication Flash Cards.app */;
+			productReference = 5C519C2017795D1100FF42AC /* Flash Cards.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -166,7 +188,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Jack Callister";
 			};
-			buildConfigurationList = 5C519C1B17795D1000FF42AC /* Build configuration list for PBXProject "Multiplication Flash Cards" */;
+			buildConfigurationList = 5C519C1B17795D1000FF42AC /* Build configuration list for PBXProject "Multiplication in a flash" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -178,7 +200,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5C519C1F17795D1100FF42AC /* Multiplication Flash Cards */,
+				5C519C1F17795D1100FF42AC /* Multiplication in a flash */,
 			);
 		};
 /* End PBXProject section */
@@ -189,7 +211,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C519C2E17795D1100FF42AC /* InfoPlist.strings in Resources */,
-				5C519C3617795D1100FF42AC /* Default.png in Resources */,
 				5C519C3D17795D1100FF42AC /* MainStoryboard.storyboard in Resources */,
 				5C519C7A177962F200FF42AC /* button.png in Resources */,
 				5C519C7B177962F200FF42AC /* button@2x.png in Resources */,
@@ -201,6 +222,13 @@
 				5C519C921779835200FF42AC /* icon.png in Resources */,
 				5C737698177AB7E800FA1689 /* Default@2x.png in Resources */,
 				5C73769E177AB98700FA1689 /* Default-568h@2x.png in Resources */,
+				5C997248177D380000671798 /* button-green.png in Resources */,
+				5C997249177D380000671798 /* button-green@2x.png in Resources */,
+				5C99724C177D3EC700671798 /* button-green-down@2x.png in Resources */,
+				5C99724D177D3EC700671798 /* button-green-down.png in Resources */,
+				5C997250177D42F500671798 /* bg-panel.png in Resources */,
+				5C997251177D42F500671798 /* bg-panel@2x.png in Resources */,
+				5CEC5CAA177E513100A7B1F0 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +311,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jack Callister (7K5ALMHDS5)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -291,6 +319,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EC125CE3-9645-4F8F-A4B7-5C10CD1D789B";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -300,9 +329,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Multiplication Flash Cards/Multiplication Flash Cards-Prefix.pch";
-				INFOPLIST_FILE = "Multiplication Flash Cards/Multiplication Flash Cards-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Multiplication Flash Cards/Multiplication in a flash-Prefix.pch";
+				INFOPLIST_FILE = "Multiplication Flash Cards/Multiplication in a flash-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "Flash Cards";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -312,9 +342,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Multiplication Flash Cards/Multiplication Flash Cards-Prefix.pch";
-				INFOPLIST_FILE = "Multiplication Flash Cards/Multiplication Flash Cards-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Multiplication Flash Cards/Multiplication in a flash-Prefix.pch";
+				INFOPLIST_FILE = "Multiplication Flash Cards/Multiplication in a flash-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "Flash Cards";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -323,7 +354,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C519C1B17795D1000FF42AC /* Build configuration list for PBXProject "Multiplication Flash Cards" */ = {
+		5C519C1B17795D1000FF42AC /* Build configuration list for PBXProject "Multiplication in a flash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C519C4117795D1100FF42AC /* Debug */,
@@ -332,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C519C4317795D1100FF42AC /* Build configuration list for PBXNativeTarget "Multiplication Flash Cards" */ = {
+		5C519C4317795D1100FF42AC /* Build configuration list for PBXNativeTarget "Multiplication in a flash" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C519C4417795D1100FF42AC /* Debug */,

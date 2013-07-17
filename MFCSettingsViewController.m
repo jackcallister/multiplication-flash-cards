@@ -33,8 +33,6 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setBool:switch0.on forKey:@"number0"];
     [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    [self disableLastSwitch];
 }
 
 - (void)switch1Changed:(id)sender
@@ -262,6 +260,7 @@
     {
         switch12.on=NO;
     }
+    [self disableLastSwitch];
 }
 
 - (void)disableLastSwitch
@@ -368,5 +367,4 @@
         }
     }
 }
-
 @end

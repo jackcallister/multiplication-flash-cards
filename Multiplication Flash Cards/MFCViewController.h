@@ -16,14 +16,18 @@
     
     NSNumber *number;
     NSNumber *multiplier;
+    NSNumber *answer;
     
     // view objects
     
     IBOutlet UILabel *equationMultiplicationField;
+    IBOutlet UILabel *answerMultiplicationField;
 }
 
 // methods
 
 - (IBAction)showMultiplicationEquation: (id)sender;
+- (IBAction)showMultiplicationAnswer: (id)sender;
+- (void)resetAnswerLabel;
 
 @end
